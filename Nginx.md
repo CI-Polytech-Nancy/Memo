@@ -1,9 +1,13 @@
+## Installer Nginx
+
 ```bash
 sudo apt install nginx
 ```
 
 ## Héberger un site
-```
+
+Les fichiers de configurations des sites sont stockés dans `/etc/nginx/sites-available`. Une version minimale se présente sous la forme suivante :
+```nginx
 server {
     server_name site.com www.site.com;
 
@@ -16,6 +20,7 @@ server {
 }
 ```
 
+Pour activer un site, il suffit de créer un lien symbolique et de redémarrer Nginx :
 ```bash
 sudo ln -s /etc/nginx/sites-available/site.com /etc/nginx/sites-enabled/site.com
 sudo systemctl restart nginx
@@ -28,6 +33,8 @@ Deux redirections à faire :
 - Entrée AAAA (`www.site.com`) vers l'IPv6 du VPS
 
 ## Certificat SSL
+
+Un certificat SSL est nécessaire pour les protocols HTTP/2 et HTTPS.
 ```bash
 sudo apt install snapd
 sudo snap install core; sudo snap refresh core
