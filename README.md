@@ -1,5 +1,5 @@
 # Tutoriels
 
 Hébergement Web :
-  - Gérer son [VPS](VPS.md)
+  - Configuration d'un [VPS](VPS.md)
   - Networking avec [Nginx](Nginx.md)
