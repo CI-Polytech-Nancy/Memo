@@ -2,9 +2,11 @@
 
 ## Switch
 
-- HP ProCurve 2510G-48
+- HP ProCurve 2510G-48 (1Gbits)
     - [Manuels en ligne](https://support.hpe.com/connect/s/product?kmpmoid=3356807&tab=manuals)
-- Cisco (100Mbits) x2
+- Cisco SF 100-16 (100Mbits)
+- TL-SF1024D (100Mbits)
+- CheetaHub Classic-2041 (10Mbits)
 
 ## Serveur
 
